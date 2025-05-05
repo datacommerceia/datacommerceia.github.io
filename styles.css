@@ -70,6 +70,28 @@ body {
     background-color: #2b7f85;
   }
   
+  .options-horizontal {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  
+  .options-horizontal label {
+    display: flex;
+    align-items: center;
+    background-color: #142832;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #FFF;
+    font-weight: bold;
+    border: 1px solid #444;
+  }
+  
+  .options-horizontal input[type="radio"] {
+    margin-right: 6px;
+  }
+  
   .result {
     max-width: 800px;
     margin: 20px auto;
