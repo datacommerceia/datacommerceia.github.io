@@ -7,132 +7,174 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Check claves del eCommerce</h1>
-      <p>El check comprende <strong>4 secciones</strong> con 3 questions. Al finalizar, presiona <strong>enviar</strong> y se mostrará tu puntaje (5 min aprox.).</p>
-      <p><strong>Puntaje (grado) implementación (1 a 5):</strong><br>
-         1 - No implementado<br>
-         3 - Parcialmente implementado<br>
-         5 - Totalmente implementado</p>
-    </header>
+
+  <h1>Check Claves del eCommerce</h1>
+
+  <section class="instrucciones">
+    <p>Este check comprende <strong>4 secciones</strong> con 3 preguntas cada una.</p>
+    <p>Al finalizar, presiona <strong>ENVIAR</strong> para conocer tu puntaje total.</p>
+    <p><strong>Tiempo estimado:</strong> 5 minutos</p>
+    <hr>
+    <p><strong>Puntaje (grado) de implementación:</strong></p>
+    <ul>
+      <li>1 - No implementado</li>
+      <li>3 - Parcialmente implementado</li>
+      <li>5 - Totalmente implementado</li>
+    </ul>
+  </section>
 
     <form id="miFormulario">
       <!-- SECCIÓN 1 -->
-      <section>
-        <h2>Sección 1: Fundamentos</h2>
-        <div class="question">
-          <p>¿Tienes objetivos de negocio claros?</p>
-          <label><input type="radio" name="s1q1" value="1"> 1</label>
-          <label><input type="radio" name="s1q1" value="2"> 2</label>
-          <label><input type="radio" name="s1q1" value="3"> 3</label>
-          <label><input type="radio" name="s1q1" value="4"> 4</label>
-          <label><input type="radio" name="s1q1" value="5"> 5</label>
-        </div>
-        <div class="question">
-          <p>¿Está definido el perfil del cliente ideal?</p>
-          <label><input type="radio" name="s1q2" value="1"> 1</label>
-          <label><input type="radio" name="s1q2" value="2"> 2</label>
-          <label><input type="radio" name="s1q2" value="3"> 3</label>
-          <label><input type="radio" name="s1q2" value="4"> 4</label>
-          <label><input type="radio" name="s1q2" value="5"> 5</label>
-        </div>
-        <div class="question">
-          <p>¿Cuentas con una propuesta de valor diferenciadora?</p>
-          <label><input type="radio" name="s1q3" value="1"> 1</label>
-          <label><input type="radio" name="s1q3" value="2"> 2</label>
-          <label><input type="radio" name="s1q3" value="3"> 3</label>
-          <label><input type="radio" name="s1q3" value="4"> 4</label>
-          <label><input type="radio" name="s1q3" value="5"> 5</label>
-        </div>
-      </section>
+<div class="section" id="seccion1">
+  <h2>Propósito y Comunicación de Marca</h2>
 
-      <!-- SECCIÓN 2 -->
-      <section>
-        <h2>Sección 2: Operaciones y logística</h2>
-        <div class="question">
-          <p>¿Tienes un sistema de gestión de pedidos eficiente?</p>
-          <label><input type="radio" name="s2q1" value="1"> 1</label>
-          <label><input type="radio" name="s2q1" value="2"> 2</label>
-          <label><input type="radio" name="s2q1" value="3"> 3</label>
-          <label><input type="radio" name="s2q1" value="4"> 4</label>
-          <label><input type="radio" name="s2q1" value="5"> 5</label>
-        </div>
-        <div class="question">
-          <p>¿Tus tiempos de entrega son predecibles?</p>
-          <label><input type="radio" name="s2q2" value="1"> 1</label>
-          <label><input type="radio" name="s2q2" value="2"> 2</label>
-          <label><input type="radio" name="s2q2" value="3"> 3</label>
-          <label><input type="radio" name="s2q2" value="4"> 4</label>
-          <label><input type="radio" name="s2q2" value="5"> 5</label>
-        </div>
-        <div class="question">
-          <p>¿Cuentas con opciones de envío variadas?</p>
-          <label><input type="radio" name="s2q3" value="1"> 1</label>
-          <label><input type="radio" name="s2q3" value="2"> 2</label>
-          <label><input type="radio" name="s2q3" value="3"> 3</label>
-          <label><input type="radio" name="s2q3" value="4"> 4</label>
-          <label><input type="radio" name="s2q3" value="5"> 5</label>
-        </div>
-      </section>
+  <div class="question">
+    <label>1. ¿Identificas claramente cuál es la propuesta de valor que brindas al cliente?<br>¿Sabes claramente para qué existe tu marca?</label>
+    <div class="options-horizontal">
+      <label><input type="radio" name="s1q1" value="1"> 1</label>
+      <label><input type="radio" name="s1q1" value="2"> 2</label>
+      <label><input type="radio" name="s1q1" value="3" checked> 3</label>
+      <label><input type="radio" name="s1q1" value="4"> 4</label>
+      <label><input type="radio" name="s1q1" value="5"> 5</label>
+    </div>
+  </div>
 
-      <!-- SECCIÓN 3 -->
-      <section>
-        <h2>Sección 3: Marketing y captación</h2>
-        <div class="question">
-          <p>¿Tienes campañas activas en redes sociales?</p>
-          <label><input type="radio" name="s3q1" value="1"> 1</label>
-          <label><input type="radio" name="s3q1" value="2"> 2</label>
-          <label><input type="radio" name="s3q1" value="3"> 3</label>
-          <label><input type="radio" name="s3q1" value="4"> 4</label>
-          <label><input type="radio" name="s3q1" value="5"> 5</label>
-        </div>
-        <div class="question">
-          <p>¿Tienes una estrategia de email marketing?</p>
-          <label><input type="radio" name="s3q2" value="1"> 1</label>
-          <label><input type="radio" name="s3q2" value="2"> 2</label>
-          <label><input type="radio" name="s3q2" value="3"> 3</label>
-          <label><input type="radio" name="s3q2" value="4"> 4</label>
-          <label><input type="radio" name="s3q2" value="5"> 5</label>
-        </div>
-        <div class="question">
-          <p>¿El sitio está optimizado para SEO?</p>
-          <label><input type="radio" name="s3q3" value="1"> 1</label>
-          <label><input type="radio" name="s3q3" value="2"> 2</label>
-          <label><input type="radio" name="s3q3" value="3"> 3</label>
-          <label><input type="radio" name="s3q3" value="4"> 4</label>
-          <label><input type="radio" name="s3q3" value="5"> 5</label>
-        </div>
-      </section>
+  <div class="question">
+    <label>2. ¿Tienen claramente identificado qué problema, necesidad o deseo solucionan sus servicios o productos?</label>
+    <div class="options-horizontal">
+      <label><input type="radio" name="s1q2" value="1"> 1</label>
+      <label><input type="radio" name="s1q2" value="2"> 2</label>
+      <label><input type="radio" name="s1q2" value="3" checked> 3</label>
+      <label><input type="radio" name="s1q2" value="4"> 4</label>
+      <label><input type="radio" name="s1q2" value="5"> 5</label>
+    </div>
+  </div>
 
-      <!-- SECCIÓN 4 -->
-      <section>
-        <h2>Sección 4: Analítica y mejora continua</h2>
-        <div class="question">
-          <p>¿Tienes herramientas de análisis web instaladas?</p>
-          <label><input type="radio" name="s4q1" value="1"> 1</label>
-          <label><input type="radio" name="s4q1" value="2"> 2</label>
-          <label><input type="radio" name="s4q1" value="3"> 3</label>
-          <label><input type="radio" name="s4q1" value="4"> 4</label>
-          <label><input type="radio" name="s4q1" value="5"> 5</label>
-        </div>
-        <div class="question">
-          <p>¿Mides la conversión de tus campañas?</p>
-          <label><input type="radio" name="s4q2" value="1"> 1</label>
-          <label><input type="radio" name="s4q2" value="2"> 2</label>
-          <label><input type="radio" name="s4q2" value="3"> 3</label>
-          <label><input type="radio" name="s4q2" value="4"> 4</label>
-          <label><input type="radio" name="s4q2" value="5"> 5</label>
-        </div>
-        <div class="question">
-          <p>¿Tienes un sistema de feedback de clientes?</p>
-          <label><input type="radio" name="s4q3" value="1"> 1</label>
-          <label><input type="radio" name="s4q3" value="2"> 2</label>
-          <label><input type="radio" name="s4q3" value="3"> 3</label>
-          <label><input type="radio" name="s4q3" value="4"> 4</label>
-          <label><input type="radio" name="s4q3" value="5"> 5</label>
-        </div>
-      </section>
+  <div class="question">
+    <label>3. ¿Comunican en sus mensajes de difusión las fortalezas de la marca y las fortalezas de sus productos?</label>
+    <div class="options-horizontal">
+      <label><input type="radio" name="s1q3" value="1"> 1</label>
+      <label><input type="radio" name="s1q3" value="2"> 2</label>
+      <label><input type="radio" name="s1q3" value="3" checked> 3</label>
+      <label><input type="radio" name="s1q3" value="4"> 4</label>
+      <label><input type="radio" name="s1q3" value="5"> 5</label>
+    </div>
+  </div>
+</div>
+
+<!-- SECCIÓN 2 -->
+<div class="section" id="seccion2">
+  <h2>Enfoque Estratégico y Recursos</h2>
+
+  <div class="question">
+    <label>1. ¿Identifican qué genera el 80% de los resultados para enfocar sus recursos?</label>
+    <div class="options-horizontal">
+      <label><input type="radio" name="s2q1" value="1"> 1</label>
+      <label><input type="radio" name="s2q1" value="2"> 2</label>
+      <label><input type="radio" name="s2q1" value="3" checked> 3</label>
+      <label><input type="radio" name="s2q1" value="4"> 4</label>
+      <label><input type="radio" name="s2q1" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label>2. ¿Tienen tablero de datos para monitorear rentabilidad?</label>
+    <div class="options-horizontal">
+      <label><input type="radio" name="s2q2" value="1"> 1</label>
+      <label><input type="radio" name="s2q2" value="2"> 2</label>
+      <label><input type="radio" name="s2q2" value="3" checked> 3</label>
+      <label><input type="radio" name="s2q2" value="4"> 4</label>
+      <label><input type="radio" name="s2q2" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label>3. ¿Tienen tablero de reportes para detectar desvíos?</label>
+    <div class="options-horizontal">
+      <label><input type="radio" name="s2q3" value="1"> 1</label>
+      <label><input type="radio" name="s2q3" value="2"> 2</label>
+      <label><input type="radio" name="s2q3" value="3" checked> 3</label>
+      <label><input type="radio" name="s2q3" value="4"> 4</label>
+      <label><input type="radio" name="s2q3" value="5"> 5</label>
+    </div>
+  </div>
+</div>
+
+<!-- SECCIÓN 3 -->
+<div class="section" id="seccion3">
+  <h2>Acciones Comerciales Inteligentes</h2>
+
+  <div class="question">
+    <label>1. ¿Realizan campañas de recompra segmentadas según comportamiento del cliente?</label>
+    <div class="options-horizontal">
+      <label><input type="radio" name="s3q1" value="1"> 1</label>
+      <label><input type="radio" name="s3q1" value="2"> 2</label>
+      <label><input type="radio" name="s3q1" value="3" checked> 3</label>
+      <label><input type="radio" name="s3q1" value="4"> 4</label>
+      <label><input type="radio" name="s3q1" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label>2. ¿Realizan campañas de cross selling?</label>
+    <div class="options-horizontal">
+      <label><input type="radio" name="s3q2" value="1"> 1</label>
+      <label><input type="radio" name="s3q2" value="2"> 2</label>
+      <label><input type="radio" name="s3q2" value="3" checked> 3</label>
+      <label><input type="radio" name="s3q2" value="4"> 4</label>
+      <label><input type="radio" name="s3q2" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label>3. ¿Usan tableros para ofertas relámpago con productos relevantes y complementarios?</label>
+    <div class="options-horizontal">
+      <label><input type="radio" name="s3q3" value="1"> 1</label>
+      <label><input type="radio" name="s3q3" value="2"> 2</label>
+      <label><input type="radio" name="s3q3" value="3" checked> 3</label>
+      <label><input type="radio" name="s3q3" value="4"> 4</label>
+      <label><input type="radio" name="s3q3" value="5"> 5</label>
+    </div>
+  </div>
+</div>
+
+<!-- SECCIÓN 4 -->
+<div class="section" id="seccion4">
+  <h2>Experiencia del Cliente y Fidelización</h2>
+
+  <div class="question">
+    <label>1. ¿Tienen sistema de atención al cliente con fase automática y fase humana?</label>
+    <div class="options-horizontal">
+      <label><input type="radio" name="s4q1" value="1"> 1</label>
+      <label><input type="radio" name="s4q1" value="2"> 2</label>
+      <label><input type="radio" name="s4q1" value="3" checked> 3</label>
+      <label><input type="radio" name="s4q1" value="4"> 4</label>
+      <label><input type="radio" name="s4q1" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label>2. ¿Tienen sistema de fidelización con recomendaciones y beneficios personalizados?</label>
+    <div class="options-horizontal">
+      <label><input type="radio" name="s4q2" value="1"> 1</label>
+      <label><input type="radio" name="s4q2" value="2"> 2</label>
+      <label><input type="radio" name="s4q2" value="3" checked> 3</label>
+      <label><input type="radio" name="s4q2" value="4"> 4</label>
+      <label><input type="radio" name="s4q2" value="5"> 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label>3. ¿Aplican automatizaciones para ventas, recomendaciones y fidelización?</label>
+    <div class="options-horizontal">
+      <label><input type="radio" name="s4q3" value="1"> 1</label>
+      <label><input type="radio" name="s4q3" value="2"> 2</label>
+      <label><input type="radio" name="s4q3" value="3" checked> 3</label>
+      <label><input type="radio" name="s4q3" value="4"> 4</label>
+      <label><input type="radio" name="s4q3" value="5"> 5</label>
+    </div>
+  </div>
+</div>
 
       <button type="submit">Enviar</button>
 
