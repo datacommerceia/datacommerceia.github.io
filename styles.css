@@ -140,7 +140,7 @@ body {
   /* Bloque de cada sección */
   #resumenSecciones p {
     background-color: #fff;
-    border-left: 6px solid #007bff;
+    border-left: 6px solid #33949A;
     padding: 15px 20px;
     margin-bottom: 15px;
     border-radius: 6px;
@@ -148,7 +148,7 @@ body {
   }
   
   #resumenSecciones strong {
-    color: #007bff;
+    color: #33949A;
   }
   
   #resumenSecciones em {
