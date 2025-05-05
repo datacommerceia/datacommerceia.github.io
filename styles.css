@@ -116,6 +116,66 @@ body {
     transition: width 0.5s ease-in-out;
   }
   
+
+/* Bloque de resultados generales */
+.resultados {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  /* Título principal */
+  .resultados h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Bloque de cada sección */
+  #resumenSecciones p {
+    background-color: #fff;
+    border-left: 6px solid #007bff;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  
+  #resumenSecciones strong {
+    color: #007bff;
+  }
+  
+  #resumenSecciones em {
+    display: block;
+    margin-top: 8px;
+    color: #555;
+  }
+  
+  /* Bloque total */
+  #resumenTotal {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e8f5e9;
+    border-left: 6px solid #2e7d32;
+    border-radius: 6px;
+  }
+  
+  #resumenTotal strong {
+    font-size: 20px;
+    color: #2e7d32;
+  }
+  
+  #resumenTotal em {
+    display: block;
+    margin-top: 8px;
+    color: #2e7d32;
+  }
+  
+
+
   .cta {
     background-color: #e6f0ff;
     border: 2px solid #4a90e2;
