@@ -91,7 +91,7 @@ body {
   .options-horizontal input[type="radio"] {
     margin-right: 6px;
   }
-  
+
   .result {
     max-width: 800px;
     margin: 20px auto;
@@ -114,5 +114,43 @@ body {
     background-color: #33949A;
     width: 0%;
     transition: width 0.5s ease-in-out;
+  }
+  
+  .cta {
+    background-color: #e6f0ff;
+    border: 2px solid #4a90e2;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  .cta h3 {
+    margin-top: 0;
+    color: #2a4d8f;
+    font-size: 1.5rem;
+  }
+  
+  .cta p {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 1em;
+    line-height: 1.6;
+  }
+  
+  .cta a {
+    display: inline-block;
+    margin: 10px 12px;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4a90e2;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
+  
+  .cta a:hover {
+    background-color: #357ab8;
   }
   
