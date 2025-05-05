@@ -177,7 +177,12 @@ body {
     color: #2e7d32;
   }
   
-
+  .puntos {
+    color: #333;           /* Color de texto visible */
+    font-weight: bold;     /* Hace que resalte */
+    font-size: 1.1em;      /* Un poco más grande */
+  }
+  
 
   .cta {
     background-color: #e6f0ff;

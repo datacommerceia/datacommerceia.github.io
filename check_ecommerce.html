@@ -227,14 +227,14 @@
         }
         total += seccionPuntaje;
         resumenHTML += `
-          <p><strong>Sección ${s}:</strong> ${seccionPuntaje} puntos<br>
-          <em>${recomendacionesPorSeccion(seccionPuntaje)}</em></p>
-        `;
+        <p><strong>Sección ${s}:</strong> <span class="puntos">${seccionPuntaje} puntos sobre 15 posibles</span><br>
+        <em>${recomendacionesPorSeccion(seccionPuntaje)}</em></p>
+        `;  
       });
 
-      resumenHTML += `<hr><p><strong>Total:</strong> ${total} puntos</p>
-        <p><em>${recomendacionTotal(total)}</em></p>`;
-
+      resumenHTML += `<hr><p><strong>Total:</strong> <span class="puntos">${total} puntos sobre 60 posibles</span></p>
+      <p><em>${recomendacionTotal(total)}</em></p>`;
+      
       document.getElementById("resumenSecciones").innerHTML = resumenHTML;
       document.getElementById("resultados").style.display = "block";
       window.scrollTo({ top: document.getElementById("resultados").offsetTop, behavior: "smooth" });
