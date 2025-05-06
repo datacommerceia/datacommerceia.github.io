@@ -22,6 +22,11 @@ body {
     margin-bottom: 6px;       /* Espaciado entre ítems */
     padding-left: 8px;       /* Opcional: simula indentación */
   }
+
+  .titulo {
+    color: #33949A;
+    font-size: 1.1em;
+  }
   
   .instrucciones {
     max-width: 800px;
@@ -81,7 +86,7 @@ body {
   }
   
   .button:hover {
-    background-color: #2b7f85;
+    background-color: #33949A;
   }
   
   .options-horizontal {
