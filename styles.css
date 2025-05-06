@@ -20,7 +20,7 @@ body {
   
   ul li {
     margin-bottom: 6px;       /* Espaciado entre ítems */
-    padding-left: 12px;       /* Opcional: simula indentación */
+    padding-left: 8px;       /* Opcional: simula indentación */
   }
   
   .instrucciones {
@@ -60,6 +60,8 @@ body {
   .question label {
     display: block;
     margin-bottom: 8px;
+    font-size: 1.1em;
+    line-height: 1.4;
   }
   
   .options label {
