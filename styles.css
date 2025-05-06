@@ -278,7 +278,7 @@ body {
   
   @media (max-width: 768px) {
     form, .instrucciones, .result {
-      padding: 20px;
+      padding: 10px;
       width: 100%;
       box-sizing: border-box;
     }
