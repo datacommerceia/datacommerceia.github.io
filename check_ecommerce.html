@@ -198,15 +198,15 @@
 
   <script>
     const recomendacionesPorSeccion = (puntaje) => {
-      if (puntaje <= 6) return "Nivel bajo: Recomendamos revisar esta área con urgencia.";
-      if (puntaje <= 10) return "Nivel medio: Hay margen de mejora importante.";
-      return "Nivel alto: Muy bien implementado, seguir optimizando.";
+      if (puntaje <= 6) return "Nivel bajo: Recomendamos revisar esta área lo antes posible.";
+      if (puntaje <= 10) return "Nivel medio: Hay un margen de mejora considerable requiere revision de acciones.";
+      return "Nivel alto: Muy bien implementado, seguir optimizando metricas y KPIs.";
     };
 
     const recomendacionTotal = (total) => {
-      if (total <= 20) return "Diagnóstico bajo: Urgente revisar múltiples áreas clave del negocio.";
-      if (total <= 40) return "Diagnóstico intermedio: Existen varias oportunidades de mejora.";
-      return "Diagnóstico sólido: Tu eCommerce está muy bien orientado, seguir monitoreando.";
+      if (total <= 20) return "Diagnóstico bajo: Nivel que requiere acciones lo antes posible, aplicar acciones múltiples en áreas clave del negocio.";
+      if (total <= 40) return "Diagnóstico intermedio: Existen varias oportunidades de mejora, revisar para optimizar el negocio.";
+      return "Diagnóstico sólido: Tu eCommerce está muy bien orientado, seguir monitoreando metricas y KPIs.";
     };
 
     document.getElementById("miFormulario").addEventListener("submit", function (e) {
