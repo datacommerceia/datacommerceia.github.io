@@ -23,17 +23,22 @@ body {
     padding-left: 8px;       /* Opcional: simula indentación */
   }
 
+  .titulo{
+    font-size: 1.3em;
+    color: #33949A;
+    margin-top: 33px;
+  }
   .titulo-logo-container {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
     flex-wrap: wrap;
   }
 
   .titulo-logo-container h1 {
     margin: 0;
-    color: #33949A;
     font-size: 1.8em;
+    color: #33949A;
   }
 
   .titulo-logo-container img {
@@ -47,10 +52,16 @@ body {
       align-items: flex-start;
     }
 
-  .titulo-logo-container img {
+    .titulo-logo-container h1 {
+      font-size: 1.5em;
+    }
+
+    .titulo-logo-container img {
       width: 130px;
       height: auto;
     }
+  }
+
 
   .instrucciones {
     max-width: 800px;
