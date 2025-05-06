@@ -11,6 +11,18 @@ body {
     margin-bottom: 20px;
   }
   
+  ul {
+    list-style: none;         /* Quita los bullets */
+    padding-left: 0;          /* Quita indentación por defecto */
+    margin-top: 0;
+    margin-bottom: 1em;       /* Opcional: margen inferior del ul */
+  }
+  
+  ul li {
+    margin-bottom: 6px;       /* Espaciado entre ítems */
+    padding-left: 12px;       /* Opcional: simula indentación */
+  }
+  
   .instrucciones {
     max-width: 800px;
     margin: 0 auto 30px auto;
