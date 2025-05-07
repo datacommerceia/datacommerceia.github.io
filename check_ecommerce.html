@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  
+  <!-- BLOQUE INSTRUCCIONES -->
 
   <section class="instrucciones">
 
@@ -29,6 +29,9 @@
       <li>5 - Total implementación</li>
     </ul>
   </section>
+
+
+
 
     <form id="miFormulario">
       <!-- SECCIÓN 1 -->
@@ -185,34 +188,47 @@
 
       <button type="submit" class="button">Enviar</button>
 
-      <!-- BLOQUE DE RESULTADOS -->
-      <div id="resultados" class="resultados" style="display:none;">
-        <h2>Resultado del Diagnóstico</h2>
-        <div id="resumenSecciones"></div>
-        <div id="resumenTotal"></div>
-            <!-- CTA final -->
-        <div class="cta">
-          <h3>¿Qué hacer ahora?</h3>
-          <p>Si los resultados son de bajo puntaje, analicemos juntos qué se debería mejorar.</p>
-          <p><strong>"Demos el primer paso"</strong><br>
-          Agendemos una reunión de 30 minutos (sin costo) donde podrás contarnos sobre tu negocio y descubramos juntos cómo escalar tus ventas con decisiones centradas en datos.</p>
-          <a href="https://wa.me/3516459079" target="_blank">Escribir por WhatsApp</a>
-          <a href="https://linkedin.com/company/data-ecommerce" target="_blank">Conectar por LinkedIn</a>
-        </div>
+     <!-- BLOQUE DE RESULTADOS -->
+    <div id="resultados" class="resultados" style="display:none;">
+      <h2>Resultado del Diagnóstico</h2>
+      <div id="resumenSecciones"></div>
+      <div id="resumenTotal"></div>
+
+      <!-- NUEVO BLOQUE CTA FINAL -->
+      <div class="cta">
+        <h3>¿Qué hacer ahora?</h3>
+        <ol>
+          <li>Revisá el puntaje asignado en cada sección. Si creés que alguna respuesta no refleja correctamente tu situación actual, podés reenviar el formulario.</li>
+          <li>Tomá una (captura de pantalla) de tus resultados.</li>
+          <li>Descargá la (Guía PDF) donde explicamos cómo interpretar los resultados y brindamos (recomendaciones de valor) para cada área según el puntaje obtenido.</li>
+        </ol>
+        <a class="boton" href="https://drive.google.com/file/d/1YoISzKI0wgWub6zG2_YZE1MQeu6XrHCB/view?usp=sharing" target="_blank">📥 Descargar Guía PDF</a>
       </div>
+    </div>
+
+
      </form>
   </div>
 
+  <!-- BLOQUE RECOMENDACIONES -->
+  
   <script>
+    const titulosSecciones = [
+      "Propósito y Comunicación de Marca",
+      "Recursos de Análisis de Datos",
+      "Enfoque Comercial Business Intelligence",
+      "Experiencia del Cliente y Fidelización"
+    ];
+
     const recomendacionesPorSeccion = (puntaje) => {
-      if (puntaje <= 6) return "Nivel bajo: Recomendamos revisar esta área lo antes posible.";
+      if (puntaje <= 6) return "Nivel bajo: Recomendamos revisar esta área para tomar decisiones mas estrategias";
       if (puntaje <= 10) return "Nivel medio: Hay un margen de mejora considerable requiere revision de acciones.";
       return "Nivel alto: Muy bien implementado, seguir optimizando metricas y KPIs.";
     };
 
     const recomendacionTotal = (total) => {
       if (total <= 20) return "Diagnóstico bajo: Requiere acciones (lo antes posible), se deben aplicar mejoras en múltiples áreas clave del negocio.";
-      if (total <= 40) return "Diagnóstico intermedio: Existen varias oportunidades de mejora, revisar para optimizar el negocio.";
+      if (total <= 40) return "Diagnóstico intermedio: Existen varias oportunidades de mejora para optimizar el analisis y gestion del eCommerce.";
       return "Diagnóstico sólido: Tu eCommerce está muy bien orientado, seguir monitoreando metricas y KPIs.";
     };
 
@@ -234,12 +250,12 @@
         }
         total += seccionPuntaje;
         resumenHTML += `
-        <p><strong>Sección ${s}:</strong> <span class="puntos">${seccionPuntaje} puntos sobre 15 posibles</span><br>
+        <p><strong>${titulosSecciones[s - 1]}:</strong> <span class="puntos">${seccionPuntaje} puntos sobre 15 posibles</span><br>
         <em>${recomendacionesPorSeccion(seccionPuntaje)}</em></p>
-        `;  
+      `;
       });
 
-      resumenHTML += `<hr><p><strong>Total:</strong> <span class="puntos">${total} puntos sobre 60 posibles</span></p>
+      resumenHTML += `<hr><p><strong>Total (General):</strong> <span class="puntos">${total} puntos sobre 60 posibles</span></p>
       <p><em>${recomendacionTotal(total)}</em></p>`;
       
       document.getElementById("resumenSecciones").innerHTML = resumenHTML;
@@ -247,6 +263,10 @@
       window.scrollTo({ top: document.getElementById("resultados").offsetTop, behavior: "smooth" });
     });
   </script>
+
+
+
+
 
 </body>
 </html>
